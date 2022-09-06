@@ -3,15 +3,19 @@ require 'fileutils'
 require_relative './classes/game'
 require_relative './classes/author'
 require_relative './classes/games_module'
+require_relative './classes/music_data'
 
 class App
-  include Games_module
+  include GamesModule
+  include MusicData
 
-  attr_reader :all_authors, :all_games
+  attr_reader :all_authors, :all_games, :all_albums, :all_genres
 
   def initialize
     @all_games = load_data('games')
     @all_authors = load_data('authors')
+    @all_albums = load_data('albums')
+    @all_genres = load_data('genres')
   end
 
   def store(file, obj)
