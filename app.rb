@@ -1,7 +1,7 @@
 require 'json'
 require 'fileutils'
-require_relative './game'
-require_relative './author'
+require_relative './classes/game'
+require_relative './classes/author'
 
 class App
   attr_reader :all_authors, :all_games
@@ -40,7 +40,7 @@ class App
   def add_game
     puts 'Enter game information'
     print 'Date of publication [yyyy-mm-dd]: '
-    publish_date = gets.chomp
+    published_date = gets.chomp
     print 'Has multiplayer? [Y/N]:'
     multiplayer = gets.chomp
     puts 'Enter author information'
@@ -49,7 +49,7 @@ class App
     print 'Last Name: '
     last_name = gets.chomp
     new_author = Author.new(first_name, last_name).author_hash
-    new_game = Game.new(first_name, publish_date, multiplayer).game_hash
+    new_game = Game.new(first_name, published_date, multiplayer).game_hash
     @all_games.push(new_game)
     @all_authors.push(new_author)
     games_data = JSON.pretty_generate(@all_games.map(&:to_hash))
@@ -60,12 +60,12 @@ class App
   end
 
   def store(file, obj)
-    File.write("./#{file}.json", obj)
+    File.write("./data/#{file}.json", obj)
   end
 
   def load_data(file)
-    file_name = "#{file}.json"
-    FileUtils.touch(file_name.to_s) unless File.exist?(file_name)
+    file_name = "./data/#{file}.json"
+    FileUtils.touch(file_name) unless File.exist?(file_name)
     data = File.read(file_name)
     return [] if data == ''
 
