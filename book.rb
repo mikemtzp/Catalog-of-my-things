@@ -1,5 +1,4 @@
 require './item'
-require 'date'
 
 class Book < Item
   attr_accessor :title, :author, :publish_date, :publisher, :cover_state
@@ -13,12 +12,13 @@ class Book < Item
     @cover_state = cover_state
   end
 
+  def public_can_be_archived?
+    can_be_archived?
+  end
+
+  private
+
   def can_be_archived?
     super || @cover_state.match?(/bad/i)
   end
 end
-
-test = Item.new('2004/04/02')
-puts test.can_be_archived?
-book = Book.new('Dracula', 'Bram Stoker', '2004/04/04', 'mike', 'tr')
-puts book.can_be_archived?
