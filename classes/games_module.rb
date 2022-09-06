@@ -1,4 +1,4 @@
-module Games_module
+module GamesModule
   def list_games
     puts "\nAll Games:\n"
     puts "___________________________________________\n\n"
