@@ -3,8 +3,9 @@ require './classes/item'
 class Movie < Item
   attr_accessor :silet
 
-  def initialize(publish_date, source, silet: false, archived: false)
-    super(publish_date, source, archived: archived)
+  def initialize(publish_date, source, silet: false)
+    super(publish_date)
+    @source = source
     @silet = silet
   end
 
@@ -12,6 +13,10 @@ class Movie < Item
     return true if @archived || @silet
 
     false
+  end
+
+  def movie_hash
+    { publish_date: @publish_date, source: @source, silet: @silet }
   end
 end
 

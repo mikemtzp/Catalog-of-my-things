@@ -30,7 +30,7 @@ def menu
     when 2
       puts 'music'
     when 3
-      puts 'movies'
+      app.show_movies
     when 4
       app.list_games
     when 5
@@ -46,7 +46,7 @@ def menu
     when 10
       puts 'Add music'
     when 11
-      puts 'Add movie'
+      app.add_movie
     when 12
       app.add_game
     when 13
