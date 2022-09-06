@@ -51,6 +51,12 @@ Cloning a repository
 * <a href="https://twitter.com/tinamura2">Twitter</a>
 * <a href="https://www.linkedin.com/in/timothy-tinashe-murambinda/">LinkedIn</a>
 
+👤 **Tom Milanesi**
+
+- GitHub: [@TomMilanesi](https://github.com/KaskMIL)
+- Twitter: [@TomMilanesi](https://twitter.com/TomasMilanesi)
+- LinkedIn: [Tomas Milanesi](https://www.linkedin.com/in/tomas-milanesi-3427bb185/)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
