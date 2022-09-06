@@ -1,4 +1,4 @@
-require './item'
+require './classes/item'
 
 class Movie < Item
   attr_accessor :silet
@@ -14,3 +14,6 @@ class Movie < Item
     false
   end
 end
+
+movie = Movie.new('2022-09-09', nil)
+puts movie.publish_date

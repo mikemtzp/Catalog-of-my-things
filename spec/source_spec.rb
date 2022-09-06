@@ -1,5 +1,5 @@
-require './source'
-require './movie'
+require './classes/source'
+require './classes/movie'
 
 describe Source do
   before :each do

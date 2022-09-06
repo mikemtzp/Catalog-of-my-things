@@ -1,4 +1,4 @@
-require './movie'
+require './classes/movie'
 
 describe Movie do
   context 'When testing Movie class' do

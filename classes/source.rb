@@ -1,4 +1,4 @@
-require './item'
+require './classes/item'
 
 class Source
   attr_accessor :id, :name, :items
