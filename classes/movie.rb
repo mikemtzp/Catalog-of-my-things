@@ -5,8 +5,8 @@ class Movie < Item
 
   def initialize(publish_date, source, silet: false)
     super(publish_date)
-    @source = source
     @silet = silet
+    @source = source
   end
 
   def can_be_archived?
@@ -20,5 +20,5 @@ class Movie < Item
   end
 end
 
-movie = Movie.new('2022-09-09', nil)
+movie = Movie.new('2022-09-09', 'none')
 puts movie.publish_date
