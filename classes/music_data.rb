@@ -8,7 +8,7 @@ module MusicData
       puts 'No music albums available'
     else
       @all_albums.each do |album|
-        puts "Title: #{album[:title]}, Genre: #{album[:genre]}"
+        puts "Title: #{album[:title]}, Genre: #{album[:genre]}, Publish date: #{album[:publish_date]}, On Spotify?: #{album[:on_spotify]}"
       end
     end
   end
@@ -31,9 +31,9 @@ module MusicData
     genre = gets.chomp
     puts 'Publish date: '
     publish_date = gets.chomp
-    # puts 'Is this album on Spotify? [Y/N]: '
-    # on_spotify == true if gets.chomp.capitalize == 'Y'
-    new_album = MusicAlbum.new(title, genre, publish_date).album_hash
+    puts 'Is this album on Spotify? [Y/N]: '
+    on_spotify = gets.chomp.capitalize == 'Y'
+    new_album = MusicAlbum.new(title, genre, publish_date, on_spotify).album_hash
     @all_albums.push(new_album)
     new_genre = Genre.new(genre, publish_date).genre_hash
     @all_genres.push(new_genre)

@@ -22,9 +22,3 @@ class Genre < Item
     item.genre = self
   end
 end
-
-new_genre = Genre.new('Electronic', '2000-10-02')
-puts new_genre.name
-puts new_genre.publish_date.year
-puts new_genre.archived
-puts new_genre.archived
