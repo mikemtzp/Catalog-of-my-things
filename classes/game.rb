@@ -12,11 +12,13 @@ class Game < Item
     @author = author
   end
 
-  def can_be_archived?
-    super && (DateTime.now.year - @last_played_at) > 2
-  end
-
   def game_hash
     { author: @author, publish_date: @publish_date, multiplayer: @multiplayer }
+  end
+
+  private
+
+  def can_be_archived?
+    super && (DateTime.now.year - @last_played_at) > 2
   end
 end
