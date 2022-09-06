@@ -1,3 +1,5 @@
+require_relative 'app'
+
 def options
   puts 'Choose your option from the list'
   puts '1 - List all books'
@@ -17,6 +19,7 @@ def options
 end
 
 def menu
+  app = App.new
   puts 'Welcome to the catalog'
   loop do
     options
@@ -25,27 +28,27 @@ def menu
     when 1
       puts 'books'
     when 2
-      puts 'music'
+      app.list_music_albums
     when 3
       puts 'movies'
     when 4
-      puts 'games'
+      app.list_games
     when 5
-      puts 'genres'
+      app.list_all_genres
     when 6
       puts 'labels'
     when 7
-      puts 'authors'
+      app.list_authors
     when 8
       puts 'sources'
     when 9
       puts 'Add  book'
     when 10
-      puts 'Add music'
+      app.add_music_album
     when 11
       puts 'Add movie'
     when 12
-      puts 'Add game'
+      app.add_game
     when 13
       exit
     else
