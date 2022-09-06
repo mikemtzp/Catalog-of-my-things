@@ -26,7 +26,7 @@ def menu
     choice = gets.chomp.to_i
     case choice
     when 1
-      puts 'books'
+      app.list_books
     when 2
       puts 'music'
     when 3
@@ -36,13 +36,13 @@ def menu
     when 5
       puts 'genres'
     when 6
-      puts 'labels'
+      app.list_labels
     when 7
       app.list_authors
     when 8
       puts 'sources'
     when 9
-      puts 'Add  book'
+      app.add_book
     when 10
       puts 'Add music'
     when 11

@@ -16,6 +16,10 @@ class Book < Item
     can_be_archived?
   end
 
+  def book_hash
+    { title: @title, author: @author, publish_date: @publish_date, publisher: @publisher, cover_state: @cover_state }
+  end
+
   private
 
   def can_be_archived?
