@@ -34,14 +34,14 @@ module BooksModule
     print 'Date of publication [yyyy-mm-dd]: '
     published_date = gets.chomp
     print 'Publisher: '
-    publisher = gets.chomp
+    publisher = gets.chomp.capitalize
     print 'Cover state [good - regular - bad]: '
-    cover_state = gets.chomp
+    cover_state = gets.chomp.capitalize
     puts 'Enter label information'
     print 'Title: '
     label_title = gets.chomp
     print 'Color: '
-    color = gets.chomp
+    color = gets.chomp.capitalize
     new_book = Book.new(title, author, published_date, publisher, cover_state).book_hash
     new_label = Label.new(label_title, color).label_hash
     @all_books << (new_book)
