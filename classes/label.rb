@@ -9,7 +9,7 @@ class Label
     @items = []
   end
 
-  def add_item(item)
+  def add_label(item)
     @items << item
     item.label = self
   end
