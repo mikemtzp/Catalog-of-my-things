@@ -5,7 +5,7 @@ require_relative './classes/author'
 require_relative './classes/games_module'
 
 class App
-  include Games_module
+  include GamesModule
 
   attr_reader :all_authors, :all_games
 
