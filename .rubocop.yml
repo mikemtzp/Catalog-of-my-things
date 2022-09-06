@@ -35,6 +35,8 @@ Style/DefWithParentheses:
 Style/FrozenStringLiteralComment:
   EnforcedStyle: never
 
+Layout/EndOfLine:
+  EnforcedStyle: lf
 Layout/HashAlignment:
   EnforcedColonStyle: key
 Layout/ExtraSpacing:
