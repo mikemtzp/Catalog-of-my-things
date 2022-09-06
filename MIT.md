@@ -1,4 +1,4 @@
-## Copyright 2022, Mike Martínez, Tinashe Murambinda, Dafne Azzolina
+## Copyright 2022, Mike Martínez, Tinashe Murambinda, Dafne Azzolina, Tom Milanesi
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this Catalog of My Things and associated documentation files, to deal in the Catalog of My Things without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Catalog of My Things, and to permit persons to whom the Catalog of My Things is furnished to do so, subject to the following conditions:
 
