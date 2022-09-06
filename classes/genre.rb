@@ -1,16 +1,17 @@
 require_relative 'item'
 
 class Genre < Item
-  def initialize(_name)
+  def initialize(name)
     super(id, publish_date, archived)
+    @name = name
     @id = Random.rand(1..1000)
     @publish_date = Date.parse(publish_date)
     @archived = archived
     @items = []
   end
 
-  def add_item(_item)
-    @items.push
-    items.genre = self
+  def add_item(item)
+    @items.push(item)
+    item.genre = self
   end
 end
