@@ -27,6 +27,8 @@ module GamesModule
 
   def add_game
     puts 'Enter game information'
+    print 'Game Name: '
+    game_name = gets.chomp
     print 'Date of publication [yyyy-mm-dd]: '
     published_date = gets.chomp
     print 'Has multiplayer? [Y/N]:'
@@ -37,7 +39,7 @@ module GamesModule
     print 'Last Name: '
     last_name = gets.chomp
     new_author = Author.new(first_name, last_name).author_hash
-    new_game = Game.new(first_name, published_date, multiplayer).game_hash
+    new_game = Game.new(game_name, first_name, published_date, multiplayer).game_hash
     @all_games.push(new_game)
     @all_authors.push(new_author)
     games_data = JSON.pretty_generate(@all_games.map(&:to_hash))
