@@ -1,10 +1,11 @@
 require './classes/item'
 
 class Movie < Item
-  attr_accessor :silet
+  attr_accessor :silet, :title
 
-  def initialize(publish_date, source, silet: false)
+  def initialize(title, publish_date, source, silet: false)
     super(publish_date)
+    @title = title
     @silet = silet
     @source = source
   end
@@ -16,7 +17,7 @@ class Movie < Item
   end
 
   def movie_hash
-    { publish_date: @publish_date, source: @source.name, silet: @silet }
+    { title: @title, publish_date: @publish_date, source: @source.name, silet: @silet }
   end
 
   def source=(source)
@@ -24,6 +25,3 @@ class Movie < Item
     source.items.push(self) unless source.items.include?(self)
   end
 end
-
-movie = Movie.new('2022-09-09', 'none')
-puts movie.publish_date

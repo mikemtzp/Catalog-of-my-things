@@ -4,7 +4,7 @@ require './classes/movie'
 describe Source do
   before :each do
     @source = Source.new('Testing source')
-    @movie = Movie.new('2022-09-06', nil)
+    @movie = Movie.new('The Lord of the Rings', '2022-09-06', nil)
     @source.add_item(@movie)
   end
 
