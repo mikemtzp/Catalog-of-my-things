@@ -23,12 +23,12 @@ describe Movie do
     end
 
     it 'can_be_archived method should return false' do
-      expect(@movie.can_be_archived?).to eq false
+      expect(@movie.send(:can_be_archived?)).to eq false
     end
 
     it 'can_be_archived should return true' do
       @movie.silet = true
-      expect(@movie.can_be_archived?).to eq true
+      expect(@movie.send(:can_be_archived?)).to eq true
     end
   end
 end
