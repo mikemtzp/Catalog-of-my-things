@@ -2,11 +2,13 @@
 
 # Catalog of My Things
 
-> In this project, we keep a catalog of books, albums and games with their respective author and genres and labels.
+> In this project, we create a console app where you can keep a catalog of books, games, music albums and movies with their respective label, author, genre, and source. Built with Ruby and SQL.
 
 ## Built With
 
 - Ruby
+- Rspec
+- SQL
 
 ## Getting Started
 
