@@ -21,7 +21,7 @@ CREATE TABLE Book (
   id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
   publisher VARCHAR(50) NOT NULL, 
   cover_state VARCHAR(7) NOT NULL,
-  FOREIGN KEY (item_id) REFERENCES Item (id), 
+  FOREIGN KEY (id) REFERENCES Item (id), 
 );
 
 --  add all properties and associations from the parent Item class as table columns
