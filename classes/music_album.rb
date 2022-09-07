@@ -2,7 +2,7 @@ require_relative 'item'
 require 'date'
 
 class MusicAlbum < Item
-  attr_accessor :title, :artist, :genre, :on_spotify
+  attr_accessor :title, :artist, :on_spotify
 
   def initialize(title, genre, publish_date, on_spotify, archived: false)
     super(publish_date)
@@ -19,6 +19,11 @@ class MusicAlbum < Item
 
   def album_hash
     { title: @title, genre: @genre, publish_date: @publish_date, on_spotify: @on_spotify }
+  end
+
+  def genre=(genre)
+    @genre = genre
+    genre.items.push(self) unless genre.items.include?(self)
   end
 
   private

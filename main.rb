@@ -26,27 +26,27 @@ def menu
     choice = gets.chomp.to_i
     case choice
     when 1
-      puts 'books'
+      app.list_books
     when 2
       app.list_music_albums
     when 3
-      puts 'movies'
+      app.show_movies
     when 4
       app.list_games
     when 5
       app.list_all_genres
     when 6
-      puts 'labels'
+      app.list_labels
     when 7
       app.list_authors
     when 8
-      puts 'sources'
+      app.show_sources
     when 9
-      puts 'Add  book'
+      app.add_book
     when 10
       app.add_music_album
     when 11
-      puts 'Add movie'
+      app.add_movie
     when 12
       app.add_game
     when 13
