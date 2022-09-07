@@ -19,9 +19,8 @@ CREATE TABLE Label (
 
 CREATE TABLE Book ( 
   id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY, 
-  item_id INT NOT NULL, 
   publisher VARCHAR(50) NOT NULL, 
-  cover_state VARCHAR(7) NOT NULL, 
+  cover_state VARCHAR(7) NOT NULL,
   FOREIGN KEY (item_id) REFERENCES Item (id), 
 );
 
@@ -42,4 +41,5 @@ CREATE TABLE Genres (
   name VARCHAR(50) NOT NULL,
   publish_date DATE NOT NULL,
   archived BOOLEAN NOT NULL
-);
+  FOREIGN KEY (id) REFERENCES Item (id)
+  );
