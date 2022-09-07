@@ -1,11 +1,9 @@
 [
   {
-    "name": "Test"
-  },
-  {
-    "name": "Test 2"
-  },
-  {
-    "name": "Test 3"
+    "name": "Netflix",
+    "id": 364,
+    "items": [
+      "#<Movie:0x000000016000f850>"
+    ]
   }
 ]

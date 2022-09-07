@@ -40,7 +40,7 @@ def menu
     when 7
       app.list_authors
     when 8
-      puts 'sources'
+      app.show_sources
     when 9
       puts 'Add  book'
     when 10

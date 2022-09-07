@@ -15,6 +15,6 @@ class Source
   end
 
   def source_hash
-    { name: @name }
+    { name: @name, id: @id, items: @items }
   end
 end
