@@ -1,11 +1,11 @@
 module MoviesModule
   def add_movie
-    puts 'Enter Movie information'
-    puts 'Date of Publication [yyyy-mm-dd]:'
+    puts "\n.Enter Movie information\n\n"
+    puts "Date of Publication [yyyy-mm-dd]:\n\n"
     publish_date = gets.chomp
-    puts 'is a silent movie? [Y/N]'
+    puts "\n.Is a silent movie? [Y/N]\n\n"
     silet = gets.chomp
-    puts 'source?'
+    puts "\n.Source?\n\n"
     source_name = gets.chomp
     source = Source.new(source_name)
     case silet == 'Y'
@@ -21,7 +21,7 @@ module MoviesModule
     sources_data = JSON.pretty_generate(@all_sources.map(&:to_hash))
     store('movies', movies_data)
     store('sources', sources_data)
-    puts 'Movie craated successfully!'
+    puts "\nMOVIE CREATED SUCCESSFULLY!\n\n"
   end
 
   def show_movies
