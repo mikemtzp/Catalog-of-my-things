@@ -5,6 +5,7 @@ CREATE TABLE Item (
   genre INT NOT NULL,
   label INT NOT NULL,
   author INT NOT NULL,
+  source INT NOT NULL,
   publish_date DATE NOT NULL,
   archived BOOLEAN NOT NULL,
   FOREIGN KEY (label) REFERENCES Label (id),
