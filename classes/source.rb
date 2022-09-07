@@ -13,4 +13,8 @@ class Source
     @items.push(item)
     item.source = self
   end
+
+  def source_hash
+    { name: @name, id: @id, items: @items }
+  end
 end

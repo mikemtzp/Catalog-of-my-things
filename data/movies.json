@@ -1,0 +1,22 @@
+[
+  {
+    "publish_date": "1111-11-11",
+    "source": "Test",
+    "silet": true
+  },
+  {
+    "publish_date": "1212-11-11",
+    "source": "Test 2",
+    "silet": false
+  },
+  {
+    "publish_date": "1212-11-11",
+    "source": "Test 3",
+    "silet": false
+  },
+  {
+    "publish_date": "1111-11-11",
+    "source": "Netflix",
+    "silet": false
+  }
+]
