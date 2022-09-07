@@ -29,3 +29,26 @@ describe Book do
     expect(@book.cover_state).to eq('Good')
   end
 end
+
+describe 'Book methods' do
+  it 'can_be_archived should return true when publish date is greater than 10 years' do
+    book = Book.new('Dracula', 'Bram Stoker', '1998-03-04', 'Penguin', 'Good')
+    expect(book.send(:can_be_archived?)).to eq(true)
+  end
+
+  it 'can_be_archived should return true when cover state equals "bad"' do
+    book = Book.new('Dracula', 'Bram Stoker', '2018-03-04', 'Penguin', 'bad')
+    expect(book.send(:can_be_archived?)).to eq(true)
+  end
+
+  it 'can_be_archived should return true when cover state equals "bad" and publish date is greater than 10 years' do
+    book = Book.new('Dracula', 'Bram Stoker', '1998-03-04', 'Penguin', 'bad')
+    expect(book.send(:can_be_archived?)).to eq(true)
+  end
+
+  it 'can_be_archived should return false when cover state doesn\'t equal "bad"
+  and publish date isnt\' greater than 10 years' do
+    book = Book.new('Dracula', 'Bram Stoker', '2018-03-04', 'Penguin', 'Good')
+    expect(book.send(:can_be_archived?)).to eq(false)
+  end
+end
