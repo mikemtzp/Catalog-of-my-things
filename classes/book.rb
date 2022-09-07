@@ -3,13 +3,13 @@ require_relative 'item'
 class Book < Item
   attr_accessor :title, :author, :publish_date, :publisher, :cover_state
 
-  def initialize(title, author, publish_date, publisher, cover_state)
+  def initialize(title, publish_date, publisher, cover_state, label)
     super(publish_date)
     @title = title
-    @author = author
     @publish_date = Date.parse(publish_date)
     @publisher = publisher
     @cover_state = cover_state
+    @label = label
   end
 
   def public_can_be_archived?
@@ -17,7 +17,12 @@ class Book < Item
   end
 
   def book_hash
-    { title: @title, author: @author, publish_date: @publish_date, publisher: @publisher, cover_state: @cover_state }
+    { title: @title, publish_date: @publish_date, publisher: @publisher, cover_state: @cover_state, label: @label.title }
+  end
+
+  def label=(label)
+    @label = label
+    label.items.push(self) unless label.items.include?(self)
   end
 
   private

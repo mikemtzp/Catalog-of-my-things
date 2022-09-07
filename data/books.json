@@ -1,9 +1,23 @@
 [
   {
-    "title": "Dracula",
+    "title": "dracula",
     "author": "Bram Stoker",
-    "publish_date": "1998-03-04",
+    "publish_date": "1990-02-02",
     "publisher": "Penguin",
-    "cover_state": "good"
+    "cover_state": "Bad"
+  },
+  {
+    "title": "Brave new world",
+    "author": "Aldous Huxle",
+    "publish_date": "1989-05-29",
+    "publisher": "Penguin",
+    "cover_state": "Good"
+  },
+  {
+    "title": "It",
+    "publish_date": "1997-05-23",
+    "publisher": "Angular",
+    "cover_state": "Regular",
+    "label": "scary"
   }
 ]
