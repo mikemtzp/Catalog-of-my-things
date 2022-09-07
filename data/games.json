@@ -1,27 +1,8 @@
 [
   {
-    "author": "tina",
-    "publish_date": "2003-01-01",
-    "multiplayer": "y"
-  },
-  {
-    "author": "Moos",
-    "publish_date": "2003-01-01",
+    "game_name": "Tik-tak-toe",
+    "author": "Juan",
+    "publish_date": "2010-11-01",
     "multiplayer": "Y"
-  },
-  {
-    "author": "Tyson",
-    "publish_date": "2003-01-01",
-    "multiplayer": "Y"
-  },
-  {
-    "author": "tinashe",
-    "publish_date": "2022-01-01",
-    "multiplayer": "y"
-  },
-  {
-    "author": "Mike",
-    "publish_date": "1992-01-01",
-    "multiplayer": "N"
   }
 ]

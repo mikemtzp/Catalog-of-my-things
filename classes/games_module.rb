@@ -6,7 +6,7 @@ module GamesModule
       puts 'No games available'
     else
       @all_games.map do |game|
-        puts "Publication Date: #{game[:publish_date]}, Multiplayer: #{game[:multiplayer]}"
+        puts "Game Name: #{game[:game_name]}, Publication Date: #{game[:publish_date]}, Multiplayer: #{game[:multiplayer]}"
       end
     end
     puts "___________________________________________\n\n"
