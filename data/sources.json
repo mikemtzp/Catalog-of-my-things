@@ -1,23 +1,9 @@
 [
   {
-    "name": "Netflix",
-    "id": 364,
-    "items": [
-      "#<Movie:0x000000016000f850>"
-    ]
-  },
-  {
     "name": "HBO",
-    "id": 85,
+    "id": 768,
     "items": [
-      "#<Movie:0x000002b3c5a3ba58>"
-    ]
-  },
-  {
-    "name": "HBO",
-    "id": 727,
-    "items": [
-      "#<Movie:0x00000001450db088>"
+      "#<Movie:0x00000001391b2080>"
     ]
   }
 ]

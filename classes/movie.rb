@@ -10,12 +10,6 @@ class Movie < Item
     @source = source
   end
 
-  def can_be_archived?
-    return true if @archived || @silet
-
-    false
-  end
-
   def movie_hash
     { title: @title, publish_date: @publish_date, source: @source.name, silet: @silet }
   end
@@ -23,5 +17,13 @@ class Movie < Item
   def source=(source)
     @source = source
     source.items.push(self) unless source.items.include?(self)
+  end
+
+  private
+
+  def can_be_archived?
+    return true if @archived || @silet
+
+    false
   end
 end
