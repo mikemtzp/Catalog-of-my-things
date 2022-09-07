@@ -3,7 +3,11 @@ require './classes/movie'
 describe Movie do
   context 'When testing Movie class' do
     before :each do
-      @movie = Movie.new('2022-09-06', nil)
+      @movie = Movie.new('The Lord of the Rings', '2022-09-06', nil)
+    end
+
+    it 'title property should be The Lord of the Rings' do
+      expect(@movie.title).to eq 'The Lord of the Rings'
     end
 
     it 'publish_date property should be a Date class' do

@@ -1,6 +1,8 @@
 module MoviesModule
   def add_movie
     puts "\n.Enter Movie information\n\n"
+    puts "Movie title:\n\n"
+    movie_title = gets.chomp
     puts "Date of Publication [yyyy-mm-dd]:\n\n"
     publish_date = gets.chomp
     puts "\n.Is a silent movie? [Y/N]\n\n"
@@ -10,9 +12,9 @@ module MoviesModule
     source = Source.new(source_name)
     case silet == 'Y'
     when true
-      movie = Movie.new(publish_date, nil, silet: true)
+      movie = Movie.new(movie_title, publish_date, nil, silet: true)
     when false
-      movie = Movie.new(publish_date, nil)
+      movie = Movie.new(movie_title, publish_date, nil)
     end
     source.add_item(movie)
     @all_movies.push(movie.movie_hash)
@@ -32,7 +34,9 @@ module MoviesModule
       puts "___________________________________________\n\n"
     else
       @all_movies.map do |movie|
-        puts "Publication date: #{movie[:publish_date]} - Silent: #{movie[:silet]} - Source: #{movie[:source]}"
+        puts "___________________________________________\n\n"
+        puts "Title: #{movie[:title]} - Publication date: #{movie[:publish_date]} - Silent: #{movie[:silet]} - Source: #{movie[:source]}"
+        puts "___________________________________________\n\n"
       end
     end
   end
