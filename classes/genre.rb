@@ -1,8 +1,7 @@
 require_relative 'item'
 
 class Genre
-  attr_accessor :name, :publish_date
-  attr_reader :id, :items
+  attr_accessor :name, :publish_date, :id, :items
 
   def initialize(name, publish_date, archived: false)
     @name = name
