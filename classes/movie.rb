@@ -16,7 +16,12 @@ class Movie < Item
   end
 
   def movie_hash
-    { publish_date: @publish_date, source: @source, silet: @silet }
+    { publish_date: @publish_date, source: @source.name, silet: @silet }
+  end
+
+  def source=(source)
+    @source = source
+    source.items.push(self) unless source.items.include?(self)
   end
 end
 
