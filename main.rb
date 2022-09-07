@@ -28,13 +28,13 @@ def menu
     when 1
       app.list_books
     when 2
-      puts 'music'
+      app.list_music_albums
     when 3
       puts 'movies'
     when 4
       app.list_games
     when 5
-      puts 'genres'
+      app.list_all_genres
     when 6
       app.list_labels
     when 7
@@ -44,7 +44,7 @@ def menu
     when 9
       app.add_book
     when 10
-      puts 'Add music'
+      app.add_music_album
     when 11
       puts 'Add movie'
     when 12

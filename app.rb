@@ -6,18 +6,22 @@ require_relative './classes/books_module'
 require_relative './classes/game'
 require_relative './classes/author'
 require_relative './classes/games_module'
+require_relative './classes/music_data'
 
 class App
   include BooksModule
   include GamesModule
+  include MusicData
 
-  attr_reader :all_books, :all_labels, :all_authors, :all_games
+  attr_reader :all_authors, :all_games, :all_albums, :all_genres, :all_books, :all_labels
 
   def initialize
     @all_books = load_data('books')
     @all_labels = load_data('labels')
     @all_games = load_data('games')
     @all_authors = load_data('authors')
+    @all_albums = load_data('albums')
+    @all_genres = load_data('genres')
   end
 
   def store(file, obj)

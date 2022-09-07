@@ -1,0 +1,14 @@
+[
+  {
+    "title": "OK Computer",
+    "genre": "Alt rock",
+    "publish_date": "1997-05-21",
+    "on_spotify": true
+  },
+  {
+    "title": "Vision Creation Newsun",
+    "genre": "Krautrock",
+    "publish_date": "1999-12-10",
+    "on_spotify": false
+  }
+]
