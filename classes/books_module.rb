@@ -19,7 +19,7 @@ module BooksModule
       puts 'No labels available'
     else
       @all_labels.map do |label|
-        puts "Label ID: #{label[:id]} - Title: #{label[:title]} - Color: #{label[:color]} - Items: #{label[:items].length}"
+        puts "Label ID: #{label[:id]} - Title: #{label[:title]} - Color: #{label[:color]} - Items: #{label[:items].length}\n"
       end
     end
     puts "___________________________________________\n\n"
@@ -49,6 +49,6 @@ module BooksModule
     labels_data = JSON.pretty_generate(@all_labels.map(&:to_hash))
     store('books', books_data)
     store('labels', labels_data)
-    puts "\nBooks and Label added successfully!\n\n"
+    puts "\nBook and Label created successfully!\n\n"
   end
 end
