@@ -8,7 +8,7 @@ module MusicData
       puts 'No music albums available'
     else
       @all_albums.each do |album|
-        puts "Title: #{album[:title]}, Genre: #{album[:genre]}, Publish date: #{album[:publish_date]}, On Spotify?: #{album[:on_spotify]}"
+        puts "Title: #{album[:title]}, Genre: #{album[:genre]}, Publish date: #{album[:publish_date]}, On Spotify?: #{album[:on_spotify]}\n"
       end
     end
   end
@@ -19,7 +19,7 @@ module MusicData
       puts 'No music genres available'
     else
       @all_genres.each do |genre|
-        puts "Name: #{genre[:name]}, Publish date: #{genre[:publish_date]}"
+        puts "Name: #{genre[:name]}, Publish date: #{genre[:publish_date]}\n"
       end
     end
   end
