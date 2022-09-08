@@ -1,0 +1,26 @@
+[
+  {
+    "title": "OK Computer",
+    "genre": "Alt rock",
+    "publish_date": "1997-05-21",
+    "on_spotify": true
+  },
+  {
+    "title": "Vision Creation Newsun",
+    "genre": "Experimental rock",
+    "publish_date": "1999-12-10",
+    "on_spotify": false
+  },
+  {
+    "title": "Homogenic",
+    "genre": "Art pop",
+    "publish_date": "1997-09-22",
+    "on_spotify": true
+  },
+  {
+    "title": "Kid A",
+    "genre": "Electronic",
+    "publish_date": "2000-10-02",
+    "on_spotify": true
+  }
+]
