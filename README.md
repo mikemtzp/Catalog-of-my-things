@@ -2,13 +2,18 @@
 
 # Catalog of My Things
 
-> In this project, we create a console app where you can keep a catalog of books, games, music albums and movies with their respective label, author, genre, and source. Built with Ruby and SQL.
+> In this project, we create a console app where you can keep a catalog of books, games, music albums, and movies with their respective label, author, genre, and source. Built with Ruby and SQL.
+
+![image](https://user-images.githubusercontent.com/97407840/189005775-7cdb3173-bdec-4722-beae-9980da2a36ab.png)
+
 
 ## Built With
 
 - Ruby
 - Rspec
 - SQL
+
+## [Video Demo](https://drive.google.com/file/d/1aBPwpCUWgAY5q9JAMg1CeNbRkbFOu-PD/view?usp=sharing)
 
 ## Getting Started
 
