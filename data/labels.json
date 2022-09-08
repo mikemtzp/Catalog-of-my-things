@@ -1,7 +1,10 @@
 [
   {
-    "id": 819,
-    "title": "Vampire",
-    "color": "black"
+    "id": 347,
+    "title": "scary",
+    "color": "Black",
+    "items": [
+      "#<Book:0x0000027823c47988>"
+    ]
   }
 ]

@@ -22,7 +22,7 @@ end
 describe 'Label methods' do
   before(:each) do
     @label = Label.new('Vampire', 'Black')
-    @book = Book.new('Dracula', 'Bram Stoker', '1998-03-04', 'Penguin', 'Good')
+    @book = Book.new('Dracula', '1998-03-04', 'Penguin', 'bad', 'Black')
     @label.add_item(@book)
   end
 
